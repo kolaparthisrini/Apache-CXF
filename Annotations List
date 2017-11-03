@@ -1,0 +1,3 @@
+@WebMethod - allows you to customize the operation name, exclude the operation from inclusion in the service, etc
+@WebParam - allows you to customize a parameter's name, namespace, direction (IN or OUT), etc
+@WebResult - allows you to customize the return value of the web service call
