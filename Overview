@@ -36,4 +36,11 @@ overhead and increases message size by 30%. If you use MTOM, CXF will send/recei
 with the message stored as a MIME attachment, just like email. This results in much more efficient 
 communication and allows you to transmit messages much larger than memory.
 -------------------------------------------------
+There are different ways to build RESTful services with CXF.
+
+JAX-RS: CXF implements JAX-RS 2.0 (JSR-339) and JAX-RS 1.1 (JSR-311): Java API for RESTful Web Services. This provides a standard way to build RESTful services in Java.
+JAX-WS Provider and Dispatch: It is possible to create RESTful services with the JAX-WS Provider and Dispatch APIs.
+HTTP Binding: The HTTP binding provides a flexible way of creating resources and mapping them to operations in your service. This can currently be done via annotations or a convention based mapping.
+Note : HTTP Binding has been removed from CXF 2.6.0.
+
 
