@@ -1,0 +1,39 @@
+CXF 3.2.x now requires Java 8.  Support for previous versions of Java has been dropped
+Old management-web module removed
+jibx, sdo, and xmlbeans databindings removed
+"object binding" removed (coloc binding handles most of these use cases)
+------------------------------------------
+Different Types Of Services
+CXF support three major types of services:
+
+SOAP - this page summarizes the options for creating SOAP services.
+REST-ful - REST support is avaiable
+CORBA
+---------------------------------
+New Features:
+JAX-RS support updated to latest 2.1 spec
+New java2swagger Maven plugin
+New WS-Transfer implementation
+Enhanced tracing support with Brave
+Support for Spring Boot 2.x
+JAX-WS - support for per-operation schema validation configuration
+New http-undertow transport
+
+----------------------------------
+
+CXF provides support for a variety of WS-* specifications.
+
+WS-Addressing
+WS-Policy
+WS-Security
+WS-ReliableMessaging
+
+-----------------------------------------
+Transmitting Binary Data
+CXF provides facilities to transmit binary data efficiently via a standard called MTOM. 
+Normally binary data inside an XML message must be Base64 encoded. This results in processing 
+overhead and increases message size by 30%. If you use MTOM, CXF will send/receive MIME messages 
+with the message stored as a MIME attachment, just like email. This results in much more efficient 
+communication and allows you to transmit messages much larger than memory.
+-------------------------------------------------
+
